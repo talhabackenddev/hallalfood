@@ -39,6 +39,7 @@ class CreateUsersTable extends Migration
             $table->string('provider_id')->nullable();
             $table->string('access_token')->nullable();
             $table->longText('reject_reason')->nullable();
+            $table->longText('country')->nullable();
             $table->string('password')->nullable();
             $table->rememberToken();
             $table->timestamps();
